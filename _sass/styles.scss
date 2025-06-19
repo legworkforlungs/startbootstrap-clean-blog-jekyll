@@ -1,10 +1,33 @@
 // Import Core Clean Blog SCSS
 @import "../assets/vendor/startbootstrap-clean-blog/scss/styles.scss";
 
-.wide-margin {
+.wide-section {
   max-width: 1200px;
-  margin-left: 0;
-  margin-right: auto;
-  padding-left: 0;
-  padding-right: 40;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.wide-section h2 {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+}
+
+.wide-section p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.wide-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
