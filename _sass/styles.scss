@@ -1,8 +1,13 @@
 // Import Core Clean Blog SCSS
 @import "../assets/vendor/startbootstrap-clean-blog/scss/styles.scss";
 
-.wide-section h2,
-.wide-section p {
-  font-family: 'Roboto', !important;
-  color: #333;
+body,
+h1, h2, h3, h4, h5, h6,
+p, a, span {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Keep Rancho only on logo/title */
+.page-heading h1 {
+  font-family: 'Rancho', cursive;
 }
