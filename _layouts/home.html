@@ -36,11 +36,23 @@ layout: default
 
 <!-- ✅ Now this is outside the container -->
 <div style="max-width: 1200px; margin: 0 auto; padding: 0 40px;">
-  <section>
-    <h2>Every step counts.</h2>
-    <p>Join us for our annual 5K run and 1-mile walk to raise awareness and funds for lung cancer research. Every step brings us closer to a cure.</p>
-    <a href="https://runsignup.com/Race/NJ/NewBrunswick/LegworkForLungs" class="btn btn-primary" target="_blank">Register Now</a>
+  <section style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap;">
+    <!-- Text on the left -->
+    <div style="flex: 1; min-width: 300px;">
+      <h2>Every step counts.</h2>
+      <p>
+        Join us for our annual 5K run and 1-mile walk to raise awareness and funds for lung cancer research.
+        Every step brings us closer to a cure.
+      </p>
+      <a href="https://runsignup.com/Race/NJ/NewBrunswick/LegworkForLungs" class="btn btn-primary" target="_blank">Register Now</a>
+    </div>
+
+    <!-- Image on the right -->
+    <div style="flex: 1; min-width: 300px;">
+      <img src="{{ '/assets/images/5k-banner.jpg' | relative_url }}" alt="5K Banner" style="width: 100%; height: auto; border-radius: 8px;">
+    </div>
   </section>
+  
   <section>
     <h2>Memorial Sloan Kettering Cancer Center</h2>
     <p>All proceeds directly benefit lung cancer research at Memorial Sloan Kettering Cancer Center. By supporting Legwork for Lungs, you help advance their vital mission—ending cancer for life!</p>
