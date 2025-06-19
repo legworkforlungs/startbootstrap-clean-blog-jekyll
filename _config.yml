@@ -6,11 +6,8 @@ baseurl:            "/startbootstrap-clean-blog-jekyll"
 url:                "https://legworkforlungs.github.io"
 
 # Social Profiles
-twitter_username:   SBootstrap
-github_username:    StartBootstrap
 facebook_username:  legworkforlungs
 instagram_username: legworkforlungs 
-linkedin_username:
 
 # Add your google-analytics ID here to activate google analytics
 google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
