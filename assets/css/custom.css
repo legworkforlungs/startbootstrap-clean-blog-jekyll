@@ -1,20 +1,12 @@
-body, p, h1, h2, h3, h4, h5, h6 {
-  font-family: 'Rancho', cursive !important;
+body,
+h1, h2, h3, h4, h5, h6, p, a, span {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.page-heading h1 {
+  font-family: 'Rancho', cursive;
 }
 
 a.navbar-brand {
   font-family: 'Rancho', cursive !important;
-}
-
-.wide-section h2 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 2.2rem;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-}
-
-.wide-section p {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  color: #333;
 }
