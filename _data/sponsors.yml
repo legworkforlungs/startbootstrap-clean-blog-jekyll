@@ -1,14 +1,14 @@
-- name: Sponsor A
-  tier: Platinum
-  logo: /img/sponsors/sponsor-a.png
-  url: https://sponsor-a.com
-
-- name: Sponsor B
+- name: Verisk Analytics
   tier: Gold
-  logo: /img/sponsors/sponsor-b.png
-  url: https://sponsor-b.com
+  logo: /img/sponsors/verisk.jpg
+  url: https://www.verisk.com/
 
-- name: Sponsor C
+- name: Eric Roos
   tier: Silver
-  logo: /img/sponsors/sponsor-c.png
-  url: https://sponsor-c.com
+  logo: /img/sponsors/allstate.jpg
+  url: https://agents.allstate.com/eric-roos-basking-ridge-nj.html?utm_source=GMB&utm_medium=Website
+
+- name: Lily Yip Table Tennis Center
+  tier: Silver
+  logo: /img/sponsors/lyttc.jpg
+  url: https://lyttc.wordpress.com/
