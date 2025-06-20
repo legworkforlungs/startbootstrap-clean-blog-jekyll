@@ -11,23 +11,23 @@ background: '/img/sponsors.jpg'
 {% assign tiers = "Platinum,Gold,Silver,Bronze" | split: "," %}
 
 {% for tier in tiers %}
-  <h2>{{ tier }}</h2>
-  <div style="margin-bottom: 40px;">
-    {% for sponsor in site.data.sponsors %}
-      {% if sponsor.tier == tier %}
-        {% if tier == "Platinum" %}
-          {% assign logo_size = "120px" %}
-        {% elsif tier == "Gold" %}
-          {% assign logo_size = "90px" %}
-        {% else %}
-          {% assign logo_size = "70px" %}
-        {% endif %}
-
-        <a href="{{ sponsor.url }}" target="_blank" style="margin: 10px; display: inline-block; text-align: center;">
-          <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}" style="max-height: {{ logo_size }};">
-          <div style="margin-top: 5px;">{{ sponsor.name }}</div>
-        </a>
+  <h2>{{ tier }} Sponsors</h2>
+  <div style="margin-bottom: 40px; display: flex; flex-wrap: wrap; gap: 20px;">
+    {% assign sponsors = site.data.sponsors | where: "tier", tier %}
+    {% for sponsor in sponsors %}
+      {% if tier == "Platinum" %}
+        {% assign logo_size = "200px" %}
+      {% elsif tier == "Gold" %}
+        {% assign logo_size = "150px" %}
+      {% else %}
+        {% assign logo_size = "120px" %}
       {% endif %}
+
+      <a href="{{ sponsor.url }}" target="_blank" style="display: inline-block;">
+        <img src="{{ sponsor.logo | relative_url }}"
+             alt="{{ sponsor.name }}"
+             style="max-width: {{ logo_size }}; border-radius: 8px;">
+      </a>
     {% endfor %}
   </div>
 {% endfor %}
