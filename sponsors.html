@@ -8,19 +8,26 @@ background: '/img/sponsors.jpg'
 
 <h3>2024 Sponsors</h3>
 
-{% assign tiers = "Platinum,Gold,Silver" | split: "," %}
+{% assign tiers = "Platinum,Gold,Silver,Bronze" | split: "," %}
 
 {% for tier in tiers %}
-  <h2 style="margin-top: 40px;">{{ tier }} Sponsors</h2>
-  <div class="sponsor-tier {{ tier | downcase }}" style="text-align: center;">
+  <h2>{{ tier }}</h2>
+  <div style="margin-bottom: 40px;">
     {% for sponsor in site.data.sponsors %}
       {% if sponsor.tier == tier %}
-        <a href="{{ sponsor.url }}" target="_blank" class="sponsor" style="display: inline-block; margin: 15px; text-align: center;">
-          <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}" style="max-width: {% if tier == 'Platinum' %}250px{% elsif tier == 'Gold' %}180px{% else %}120px{% endif %}; border-radius: 8px; display: block; margin: 0 auto 8px auto;">
-          <p style="margin: 0; font-weight: bold;">{{ sponsor.name }}</p>
+        {% if tier == "Platinum" %}
+          {% assign logo_size = "120px" %}
+        {% elsif tier == "Gold" %}
+          {% assign logo_size = "90px" %}
+        {% else %}
+          {% assign logo_size = "70px" %}
+        {% endif %}
+
+        <a href="{{ sponsor.url }}" target="_blank" style="margin: 10px; display: inline-block; text-align: center;">
+          <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}" style="max-height: {{ logo_size }};">
+          <div style="margin-top: 5px;">{{ sponsor.name }}</div>
         </a>
       {% endif %}
     {% endfor %}
   </div>
 {% endfor %}
-
