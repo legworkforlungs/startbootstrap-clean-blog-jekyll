@@ -17,13 +17,13 @@ background: '/img/sponsors.jpg'
     <div style="margin-bottom: 40px; display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
       {% for sponsor in sponsors %}
         {% if tier == "Platinum" %}
-          {% assign logo_size = "300px" %}
+          {% assign logo_size = "400px" %}
         {% elsif tier == "Gold" %}
-          {% assign logo_size = "200px" %}
+          {% assign logo_size = "300px" %}
         {% elsif tier == "Silver" %}
-          {% assign logo_size = "100px" %}
+          {% assign logo_size = "250px" %}
         {% elsif tier == "Bronze" %}
-          {% assign logo_size = "50px" %}
+          {% assign logo_size = "150px" %}
         {% endif %}
 
         <div style="text-align: center; width: {{ logo_size }};">
