@@ -1,0 +1,14 @@
+- name: Sponsor A
+  tier: Platinum
+  logo: /img/sponsors/sponsor-a.png
+  url: https://sponsor-a.com
+
+- name: Sponsor B
+  tier: Gold
+  logo: /img/sponsors/sponsor-b.png
+  url: https://sponsor-b.com
+
+- name: Sponsor C
+  tier: Silver
+  logo: /img/sponsors/sponsor-c.png
+  url: https://sponsor-c.com
