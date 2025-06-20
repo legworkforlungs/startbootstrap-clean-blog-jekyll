@@ -1,48 +1,91 @@
 ---
 layout: page
-title: Posts
-background: '/img/bg-post.jpg'
+title: Event Details
+background: '/img/602.jpg'
 ---
 
-{% for post in paginator.posts %}
+<div class="wide-section" style="max-width: 1200px; margin: 0 auto; padding: 0 40px;">
+  <section style="margin-bottom: 80px;">
+    <h2 style="font-family: 'Open Sans'; font-size: 2rem; font-weight: 300;">
+      Event Overview
+    </h2>
+    <p style="font-size: 1.1rem; line-height: 1.6;">
+      Whether you choose to come to support lung cancer research, to set a PR, or to spend a fun morning with family and friends, this event only requires you to be prepared to use your lungs for their intended purpose: movement! 
+      The Legwork for Lungs 5K and Mile Walk is hosting its 9th-annual event on November 8th, and though its main focus will be our run (of course!), there will also be a 1-mile fitness walk, games, food, music, and prizes!
+    </p>
+    <a href="https://runsignup.com/Race/NJ/NewBrunswick/LegworkForLungs"
+         target="_blank"
+         style="display: inline-block; padding: 8px 16px; background-color: #115877; color: white;
+                text-decoration: none; border-radius: 5px; font-size: 0.9rem;">
+        Registration Information
+      </a>
+  </section>
 
-<article class="post-preview">
-  <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-    <h2 class="post-title">{{ post.title }}</h2>
-    {% if post.subtitle %}
-    <h3 class="post-subtitle">{{ post.subtitle }}</h3>
-    {% else %}
-    <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
-    {% endif %}
-  </a>
-  <p class="post-meta">Posted by
-    {% if post.author %}
-    {{ post.author }}
-    {% else %}
-    {{ site.author }}
-    {% endif %}
-    on {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}
-  </p>
-</article>
+  <section style="margin-bottom: 20px;">
+    <h2 style="font-family: 'Open Sans'; font-size: 2rem; font-weight: 300;">
+      Location & Course Map
+    </h2>
+    <p style="font-size: 1.1rem; line-height: 1.6;">
+      Parking is available in a lot next to the pavilion or in parking permitted areas along the park.<br>
+      Upon arrival, please proceed to the pavilion for check-in.<br>
+      Volunteers, cones, and signs will be present during the race to ensure runners stay on track!
+      Water will be provided at water stations during the race to ensure runners stay hydrated!
+    </p>
+  </section>
+  
+  <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+  <!-- Left Image with Overlay Text -->
+  <div style="flex: 1; min-width: 300px; max-width: 500px; position: relative; height: 400px; margin-bottom: 80px;">
+    <img src="{{ '/img/eventdetails1.jpg' | relative_url }}" alt="Event Photo"
+         style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px; display: block;">
+    
+    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                text-align: center;">
+      <h3 style="margin: 0; font-size: 1.5rem; font-weight: bold; color: #ff7756;">
+        Race Location
+      </h3>
+      <p style="margin: 0 0 10px 0; color: #115877;">
+        Buccleuch Park<br>
+        321 Easton Ave<br>
+        New Brunswick, NJ 08901
+      </p>
+      <a href="https://maps.app.goo.gl/zonYBrgEbdft5PV27"
+         target="_blank"
+         style="display: inline-block; padding: 8px 16px; background-color: #ff7756; color: white;
+                text-decoration: none; border-radius: 5px; font-size: 0.9rem;">
+        Get Directions
+      </a>
+    </div>
+  </div>
 
-<hr>
-
-{% endfor %}
-
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-
-<div class="clearfix">
-
-  {% if paginator.previous_page %}
-  <a class="btn btn-primary float-left" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr;
-    Newer<span class="d-none d-md-inline"> Posts</span></a>
-  {% endif %}
-
-  {% if paginator.next_page %}
-  <a class="btn btn-primary float-right" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older<span class="d-none d-md-inline"> Posts</span> &rarr;</a>
-  {% endif %}
-
+  <!-- Right Image -->
+  <div style="flex: 1; min-width: 300px; max-width: 500px; height: 400px; margin-bottom: 80px;">
+    <img src="{{ '/img/eventdetails2.jpg' | relative_url }}" alt="Map Image"
+         style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px; display: block;">
+  </div>
 </div>
 
-{% endif %}
+  
+  <section style="margin-bottom: 80px;">
+    <h2 style="font-family: 'Open Sans'; font-size: 2rem; font-weight: 300;">
+      Schedule
+    </h2>
+    <ul style="font-size: 1.1rem; line-height: 1.6; padding-left: 1.2em;">
+      <li>9:15 AM – Check-In Opens</li>
+      <li>9:45 AM – 1-Mi Walk Check-In Closes</li>
+      <li>10:00 AM – 1-Mi Walk Starts</li>
+      <li>10:45 AM – 5K Race Check-In Closes</li>
+      <li>11:00 AM – 5K Race Starts</li>
+      <li>12:00 PM – Awards Ceremony</li>
+    </ul>
+  </section>
+
+  <section style="margin-bottom: 80px;">
+    <h2 style="font-family: 'Open Sans'; font-size: 2rem; font-weight: 300;">
+      Awards
+    </h2>
+    <p style="font-size: 1.1rem; line-height: 1.6;">
+      Awards will be given to the three overall top male and female finishers and the top finishers in every age bracket:<br>
+      14 & Under, 15-19, 20-29, 30-39, 40-49, 50-59, 60 & Over
+    </p>
+  </section>
