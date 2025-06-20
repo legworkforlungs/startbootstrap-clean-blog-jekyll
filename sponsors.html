@@ -16,11 +16,11 @@ background: '/img/sponsors.jpg'
     {% assign sponsors = site.data.sponsors | where: "tier", tier %}
     {% for sponsor in sponsors %}
       {% if tier == "Platinum" %}
-        {% assign logo_size = "200px" %}
+        {% assign logo_size = "400px" %}
       {% elsif tier == "Gold" %}
-        {% assign logo_size = "150px" %}
+        {% assign logo_size = "300px" %}
       {% else %}
-        {% assign logo_size = "120px" %}
+        {% assign logo_size = "200px" %}
       {% endif %}
 
       <div style="text-align: center; width: {{ logo_size }};">
