@@ -12,3 +12,48 @@
   tier: Silver
   logo: /img/sponsors/lyttc.jpg
   url: https://lyttc.wordpress.com/
+
+- name: Dog is Human
+  tier: Silver
+  logo: /img/sponsors/dog.png
+  url: https://dogishuman.com/
+
+- name: Leisa Begley
+  tier: Silver
+  logo: /img/sponsors/leisa.png
+  url: https://leisa-begley.weichert.com/
+
+- name: Vera Wang
+  tier: Silver
+  logo: /img/sponsors/vera.png
+  url: https://vera-wang.weichert.com/
+
+- name: Bagel Bazaar
+  tier: Silver
+  logo: /img/sponsors/bagel.png
+  url: https://www.bagelbazaar.com/
+
+- name: No. 1 Chinese Restaurant
+  tier: Bronze
+  logo: /img/sponsors/chinese.png
+  url: https://www.no1chinese-nj.com/
+
+- name: Oriental Trading Company
+  tier: Bronze
+  logo: /img/sponsors/oriental.png
+  url: https://www.orientaltrading.com/?BP=PS542&source=google&ms=search&cm_mmc=GoogleBrand-_-210444877-_-14485436677-_-oriental%20trading&cm_mmca2=Brand&cm_mmca4=kwd-77342011&cm_mmca8=e&cm_mmca11=oriental%20trading&gad_source=1&gclid=Cj0KCQjw_sq2BhCUARIsAIVqmQvpucCeaBK4RPiRtq7vs2AXTmTDTZ6CODMP4RgRATVMFyiadTOhlsgaAjtoEALw_wcB
+
+- name: Golden Star Chinese Restaurant
+  tier: Bronze
+  logo: /img/sponsors/golden.png
+  url: https://www.ezordernow.com/southboundbrook-chinesefood-goldenstarchineserestaurant
+
+- name: Turning Point
+  tier: Bronze
+  logo: /img/sponsors/turning.png
+  url: https://turningpointrestaurants.com/
+
+- name: Costco
+  tier: Bronze
+  logo: /img/sponsors/costco.png
+  url: https://www.costco.com/
