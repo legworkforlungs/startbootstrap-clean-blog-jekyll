@@ -11,7 +11,7 @@ background: '/img/sponsors.jpg'
 {% assign tiers = "Platinum,Gold,Silver,Bronze" | split: "," %}
 
 {% for tier in tiers %}
-  <h2>{{ tier }} Sponsors</h2>
+  <h4 style="margin-top: 40px;">{{ tier }} Sponsors</h4>
   <div style="margin-bottom: 40px; display: flex; flex-wrap: wrap; gap: 20px;">
     {% assign sponsors = site.data.sponsors | where: "tier", tier %}
     {% for sponsor in sponsors %}
