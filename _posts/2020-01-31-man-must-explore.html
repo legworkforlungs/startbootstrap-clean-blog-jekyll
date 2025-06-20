@@ -1,40 +1,50 @@
 ---
 layout: post
-title: "Man must explore, and this is exploration at its greatest"
-subtitle: "Problems look mighty small from 150 miles up"
-date: 2020-01-31 10:45:13 -0400
+title: "My Mother Eileen"
+date: 2016-04-06 10:45:13 -0400
 background: '/img/posts/06.jpg'
+author: "Scott Lerner"
 ---
 
-<p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
+<div class="carousel-container" style="position: relative; max-width: 600px; margin: auto;">
+  <img class="carousel-slide" src="{{ '/img/eileen1.jpg' | relative_url }}" style="width:100%; display: block;">
+  <img class="carousel-slide" src="{{ '/img/eileen2.jpg' | relative_url }}" style="width:100%; display: none;">
+  <img class="carousel-slide" src="{{ '/img/eileen3.jpg' | relative_url }}" style="width:100%; display: none;">
+  <img class="carousel-slide" src="{{ '/img/eileen4.jpg' | relative_url }}" style="width:100%; display: none;">
 
-<p>Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.</p>
 
-<p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.</p>
+  <a class="carousel-prev" onclick="changeSlide(-1)" style="position:absolute; top:50%; left:0; transform:translateY(-50%); font-size:2rem; color:white; background-color:rgba(0,0,0,0.5); padding: 5px 10px; cursor:pointer;">&#10094;</a>
+  <a class="carousel-next" onclick="changeSlide(1)" style="position:absolute; top:50%; right:0; transform:translateY(-50%); font-size:2rem; color:white; background-color:rgba(0,0,0,0.5); padding: 5px 10px; cursor:pointer;">&#10095;</a>
+</div>
 
-<p>A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.</p>
+<script>
+  let slideIndex = 0;
+  const slides = document.getElementsByClassName("carousel-slide");
 
-<p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
+  function showSlide(index) {
+    if (index >= slides.length) slideIndex = 0;
+    if (index < 0) slideIndex = slides.length - 1;
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slides[slideIndex].style.display = "block";
+  }
 
-<h2 class="section-heading">The Final Frontier</h2>
+  function changeSlide(n) {
+    showSlide(slideIndex += n);
+  }
 
-<p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
+  // Optional: auto slide every 5 seconds
+  setInterval(() => changeSlide(1), 5000);
 
-<p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
+  // Initialize
+  showSlide(slideIndex);
+</script>
 
-<blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
-
-<p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
-
-<h2 class="section-heading">Reaching for the Stars</h2>
-
-<p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</p>
-
-<img class="img-fluid" src="https://source.unsplash.com/Mn9Fa_wQH-M/800x450" alt="Demo Image">
-<span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
-
-<p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
-
-<p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.</p>
-
-<p>Placeholder text by <a href="http://spaceipsum.com/">Space Ipsum</a>. Photographs by <a href="https://unsplash.com/">Unsplash</a>.</p>
+<p>What a meaningful act of generosity and kindness. Nastassja - you and your family should be so proud. Here is my story.</p>
+<p>So, I am driving to work one day last fall… And out of the corner of my eye, I see a lawn sign with the words “Legwork for Lungs”. I read it closer to see that it was a race to help cure lung cancer. To me this was more than a sign, but rather a sign from above. You see, my mom Eileen Lerner Zirin’s life was taken way too early because of this horrific disease. Diagnosed in 2010 with Stage 4 lung cancer and having NEVER smoked a day in her LIFE. NEVER. My mom beat the odds after given 9 months to live but made it almost 5 years through treatment with the support and love of family.</p>
+<p>My mom was a fighter, someone who never quit. She was a loving and proud grandmother, mom, wife, daughter, sister, and friend.. I’d be the first to admit, I am a mamma’s boy - always was - always will be. Not a day goes by that I don’t think about her, where I don’t see a piece of her in my three beautiful daughters. She was a teacher and she continues to guide me through life.</p>
+<p>So my family decides to go the race… We do the walk, my wife Tricia actually wins a medal while singing a song with my mom’s name, “Come On Eileen” in her head as she runs towards the finish line. My girls play carnival games, family tug of war, and watch my wife run with pride. It turns out to be a great day of remembrance for my mom and a day of awareness against lung cancer.</p>
+<p>Thank you Nastassja for all of this, who would have thought a 14 year old stranger, with an idea and a tremendous amount of hard work would give me this gift. Thank you runners and sponsors. I’ll be there race day in November. Let’s beat this horrific disease together. My mom will be there in spirit and I hope to see you there as well.</p>
+<p>Come On Eileen!!!</p>
+<p>Respectfully,<br>Scott Lerner</p>
