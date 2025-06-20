@@ -2,15 +2,13 @@
 layout: page
 title: Past Sponsors
 ---
-
-<h2 style="font-family: 'Rancho', cursive; text-align: center; color: #115877;">Our Sponsors Over the Years</h2>
-
-{% assign sorted_sponsors = site.sponsors | sort: 'year' | reverse %}
-{% for sponsor_page in sorted_sponsors %}
-  <div style="margin-top: 40px;">
-    <h3 style="color: #ff7756;">{{ sponsor_page.year }}</h3>
-    <div>
-      {{ sponsor_page.content }}
-    </div>
-  </div>
-{% endfor %}
+<ul>
+  {% assign sorted_sponsors = site.past-sponsors | sort: 'year' | reverse %}
+  {% for sponsor in sorted_sponsors %}
+    <li>
+      <a href="{{ sponsor.url | relative_url }}">
+        {{ sponsor.title }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
