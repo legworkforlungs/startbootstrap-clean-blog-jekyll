@@ -30,8 +30,8 @@ background: '/img/bg-sponsor.jpg'
 {% for tier in tiers %}
   {% assign sponsors = site.data.sponsors | where: "tier", tier %}
   {% if sponsors.size > 0 %}
-    <h4 style="margin-top: 40px;">{{ tier }} Sponsors</h4>
-    <div style="margin-bottom: 40px; display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
+    <h4 style="margin-top: 25px; margin-bottom: 25px;">{{ tier }}</h4>
+    <div style="margin-bottom: 25px; display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
       {% for sponsor in sponsors %}
         {% if tier == "Platinum" %}
           {% assign logo_size = "400px" %}
