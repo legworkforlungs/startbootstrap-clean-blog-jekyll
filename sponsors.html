@@ -17,7 +17,7 @@ background: '/img/bg-sponsor.jpg'
 
   <a href="{{'/img/sponsors/eventacceptance.pdf' | relative_url }}" 
      class="btn btn-primary" 
-     style="padding: 10px 20px; background-color: #ff7756; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; margin: 10px;">
+     style="padding: 10px 20px; background-color: #ff7756; color: white; text-decoration: none; font-weight: bold; display: inline-block; margin: 10px;">
      MSKCC Event Acceptance Letter
   </a>
 
@@ -30,7 +30,7 @@ background: '/img/bg-sponsor.jpg'
 {% for tier in tiers %}
   {% assign sponsors = site.data.sponsors | where: "tier", tier %}
   {% if sponsors.size > 0 %}
-    <h4 style="margin-top: 25px; margin-bottom: 25px;">{{ tier }}</h4>
+    <h4 style="margin-top: 25px; margin-bottom: 25px;">{{ tier }} Sponsor</h4>
     <div style="margin-bottom: 25px; display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
       {% for sponsor in sponsors %}
         {% if tier == "Platinum" %}
