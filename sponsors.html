@@ -21,9 +21,6 @@ background: '/img/bg-sponsor.jpg'
 </div>
 
 {% assign sponsors_2025 = site.data.sponsors | where: "year", "2025" %}
-
-<h3 style="text-align: center; margin-top: 50px;">2025 Sponsors</h3>
-
 {% for tier in tiers %}
   {% assign sponsors = sponsors_2025 | where: "tier", tier %}
   {% if sponsors.size > 0 %}
