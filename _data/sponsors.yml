@@ -75,3 +75,15 @@
   logo: /img/sponsors/target.png
   url: https://www.target.com/?TCID=PDS-319991062&gad_source=1&gad_campaignid=319991062&gbraid=0AAAAAD-5dfaIjv-I3ckT9G_Uad0EdCRMh&gclid=CjwKCAjw3_PCBhA2EiwAkH_j4p73VCZQyu7aHyLcVUWFIJchGGYd3pIEAFnhTDzYEr_APJ1Jw0ix5BoCufYQAvD_BwE&gclsrc=aw.ds
   year: 2025
+
+- name: Vera Wang
+  tier: Gold
+  logo: /img/sponsors/vera.png
+  url: https://vera-wang.weichert.com/
+  year: 2025
+  
+- name: Wawa
+  tier: Silver
+  logo: /img/sponsors/wawa.png
+  url: https://www.wawa.com/
+  year: 2025
