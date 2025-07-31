@@ -88,13 +88,15 @@
   url: https://www.wawa.com/
   year: 2025
 
-- name: Tacoria - New Brunswick
+- name: Tacoria
+  location: New Brunswick
   tier: Bronze
   logo: /img/sponsors/tacoria.png
   url: https://tacoria.com/location/new-brunswick/
   year: 2025
 
-- name: Thyme Machine - New Brunswick
+- name: Thyme Machine
+  location: New Brunswick
   tier: Silver
   logo: /img/sponsors/thymemachine.png
   url: https://order.toasttab.com/online/thyme-machine-cafe-nj-139-easton-avenue
