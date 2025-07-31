@@ -50,6 +50,9 @@ background: '/img/bg-sponsor.jpg'
                    style="max-width: 100%; border-radius: 8px;">
             </a>
             <p style="margin-top: 8px; font-size: 0.9rem; color: #333;">{{ sponsor.name }}</p>
+{% if sponsor.location %}
+  <p style="margin-top: 2px; font-size: 0.75rem; font-style: italic; color: #666;">{{ sponsor.location }}</p>
+{% endif %}
           </div>
         {% endfor %}
       </div>
