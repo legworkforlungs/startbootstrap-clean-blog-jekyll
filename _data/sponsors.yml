@@ -154,3 +154,10 @@
   logo: /img/sponsors/dunkin.png
   url: https://locations.dunkindonuts.com/en/nj/somerset/1067-easton-ave/302129
   year: 2025
+
+- name: Starbucks
+  location: East Brunswick
+  tier: Silver
+  logo: /img/sponsors/starbucks.png
+  url: https://www.starbucks.com/menu
+  year: 2025
