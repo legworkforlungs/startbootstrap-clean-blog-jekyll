@@ -161,3 +161,10 @@
   logo: /img/sponsors/starbucks.png
   url: https://www.starbucks.com/menu
   year: 2025
+
+- name: B. Beamesderfer Gallery
+  location: Highland Park
+  tier: Silver
+  logo: /img/sponsors/gallery.png
+  url: https://www.beamesderfergallery.com/
+  year: 2025
