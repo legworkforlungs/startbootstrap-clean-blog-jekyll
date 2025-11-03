@@ -88,17 +88,20 @@ let participants = [];
 
 function parseCSV(text) {
   const rows = text.trim().split('\n');
+  const headers = rows[0].split(/\t|,/).map(h => h.trim().toLowerCase()); // handle tab or comma separated
+
   participants = rows.slice(1).map(row => {
-    const [bib, name, age, gender] = row.split(',');
+    const cols = row.split(/\t|,/);
     return {
-      bib: bib.trim(),
-      name: name.trim(),
-      age: parseInt(age.trim()),
-      gender: gender.trim(),
-      category: getCategory(parseInt(age.trim()), gender.trim()),
+      name: cols[headers.indexOf('name')].trim(),
+      category: cols[headers.indexOf('category')].trim(),
+      age: parseInt(cols[headers.indexOf('age')].trim()),
+      gender: cols[headers.indexOf('gender')].trim(),
+      bib: cols[headers.indexOf('bib')].trim(),
       finishTime: ''
     };
   });
+
   renderTable();
 }
 
