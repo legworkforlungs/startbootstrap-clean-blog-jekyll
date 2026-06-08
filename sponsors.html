@@ -60,16 +60,16 @@ background: '/img/bg-sponsor.jpg'
   {% endfor %}
 {% endif %}
 
-{% assign sponsors_2024 = site.data.sponsors | where: "year", "2024" %}
+{% assign sponsors_2025 = site.data.sponsors | where: "year", "2025" %}
 
-{% if sponsors_2024.size > 0 %}
+{% if sponsors_2025.size > 0 %}
   <details style="margin-top: 50px; margin-bottom: 25px;">
     <summary style="font-size: 1.5rem; font-weight: bold; text-align: center; cursor: pointer;">
-      2024 Sponsors
+      2025 Sponsors
     </summary>
 
     {% for tier in tiers %}
-      {% assign sponsors = sponsors_2024 | where: "tier", tier %}
+      {% assign sponsors = sponsors_2025 | where: "tier", tier %}
       {% if sponsors.size > 0 %}
         <h4 style="margin-top: 25px; margin-bottom: 15px; ">{{ tier }} Sponsors</h4>
         <div style="margin-bottom: 25px; display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
