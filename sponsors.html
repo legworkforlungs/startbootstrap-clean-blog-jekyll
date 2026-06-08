@@ -5,15 +5,15 @@ background: '/img/bg-sponsor.jpg'
 ---
 <div style="text-align: center; margin-bottom: 60px;">
 
-  <h3>2025 Sponsors</h3>
+  <h3>2026 Sponsors</h3>
   <p>We are currently seeking sponsors for our upcoming 5K Run and Mile Walk.</p>
   <p>Please click the button below if you are interested in sponsoring our event!</p>
-  <a href="{{'/img/sponsors/sponsorletter.pdf' | relative_url }}" 
+  <a href="{{'/img/sponsors/hold.pdf' | relative_url }}" 
      class="btn btn-primary" 
      style="padding: 10px 20px; background-color: #ff7756; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; margin: 10px;">
      Sponsorship Information
   </a>
-  <a href="{{'/img/sponsors/eventacceptance.pdf' | relative_url }}" 
+  <a href="{{'/img/sponsors/hold.pdf' | relative_url }}" 
      class="btn btn-primary" 
      style="padding: 10px 20px; background-color: #ff7756; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; margin: 10px;">
      MSKCC Event Acceptance Letter
@@ -23,12 +23,12 @@ background: '/img/bg-sponsor.jpg'
 {% assign tiers = "Platinum,Gold,Silver,Bronze" | split: "," %}
 
 
-{% assign sponsors_2025 = site.data.sponsors | where: "year", "2025" %}
+{% assign sponsors_2026 = site.data.sponsors | where: "year", "2025" %}
 
-{% if sponsors_2025.size > 0 %}
+{% if sponsors_2026.size > 0 %}
 
   {% for tier in tiers %}
-    {% assign sponsors = sponsors_2025 | where: "tier", tier %}
+    {% assign sponsors = sponsors_2026 | where: "tier", tier %}
     {% if sponsors.size > 0 %}
       <h4 style="margin-top: 25px; margin-bottom: 15px; text-align: center;">{{ tier }} Sponsors</h4>
       <div style="margin-bottom: 25px; display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
