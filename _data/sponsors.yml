@@ -116,3 +116,105 @@
   logo: /img/sponsors/costco.png
   url: https://www.costco.com/
   year: 2025
+
+- name: Vera Wang
+  tier: Gold
+  logo: /img/sponsors/verawang.png
+  url: https://vera-wang.weichert.com/
+  year: 2026
+
+- name: Ivy Rehab Physical Therapy
+  tier: Gold
+  logo: /img/sponsors/ivyrehab.png
+  url: https://ivyrehab.com/
+  year: 2026
+
+- name: Tacoria
+  tier: Gold
+  logo: /img/sponsors/tacoria.png
+  url: https://tacoria.com/
+  year: 2026
+
+- name: Coca-Cola
+  tier: Gold
+  logo: /img/sponsors/cocacola.png
+  url: https://www.coca-cola.com/us/en
+  year: 2026
+
+- name: Resilience Wellness Studio
+  tier: Silver
+  logo: /img/sponsors/resilience.png
+  url: https://resiliencewellnessstudio.com/
+  year: 2026
+
+- name: Monster Mini Golf
+  tier: Silver
+  logo: /img/sponsors/monsterminigolf.png
+  url: https://monsterminigolf.com/locations/us/nj/edison/
+  year: 2026
+
+- name: Valery's Pharmacy
+  tier: Silver
+  logo: /img/sponsors/valerys.png
+  url:
+  year: 2026
+
+- name: Harvey's
+  tier: Silver
+  logo: /img/sponsors/harvys.png
+  url: https://www.theharvys.com/
+  year: 2026
+
+- name: Chili's
+  tier: Bronze
+  logo: /img/sponsors/chilis.png
+  url: https://www.chilis.com/?gclsrc=aw.ds&gad_source=1&gad_campaignid=15763390530&gbraid=0AAAAAD22gIxoV1ZUekuEbAZVzW7xjZFdr&gclid=CjwKCAjwyabTBhBFEiwAM3mNUOjOO64KbowGXHCL5rSHl6ZJFEt7o3VqUfnMgezY-89BQIq7QsMMOhoCb2MQAvD_BwE
+  year: 2026
+
+- name: Wawa
+  tier: Bronze
+  logo: /img/sponsors/wawa.png
+  url: https://www.wawa.com/
+  year: 2026
+
+- name: ShopRite
+  tier: Bronze
+  logo: /img/sponsors/shoprite.png
+  url: https://www.shoprite.com/sm/pickup/rsid/3000?srsltid=AYCX9vJJjRULceWvVSPCzE7nQ11OTJNeN2ci25y2XcXXGMopPk8KhuaZ
+  year: 2026
+
+- name: Applebees
+  tier: Bronze
+  logo: /img/sponsors/applebees.png
+  url: https://www.applebees.com/en/menu?&&&&gclsrc=aw.ds&gad_source=1&gad_campaignid=11287089015&gbraid=0AAAAADhTe4UcIZWMM-DiaKmTvv1OrZyPG&gclid=Cj0KCQiA77DXBhCHARIsAHf2MNpSbzmW8ss5SsK55Qwx6_Xcp-wog_HrOpWz9SUd7_EbUbaD4fvnMV0aAj1DEALw_wcB
+  year: 2026
+
+- name: Charlie's Our Angel
+  tier: Bronze
+  logo: /img/sponsors/charlie.png
+  url: 
+  year: 2026
+
+- name: B. Beamesderfer Gallery
+  tier: Bronze
+  logo: /img/sponsors/beam.png
+  url: https://www.beamesderfergallery.com/
+  year: 2026
+
+- name: Yogi Medical Care
+  tier: Bronze
+  logo: /img/sponsors/yogi.png
+  url: 
+  year: 2026
+
+- name: Bernadette Ramos LLC
+  tier: Bronze
+  logo: /img/sponsors/bernadette.png
+  url: 
+  year: 2026
+
+- name: Thomas Sweet
+  tier: Bronze
+  logo: /img/sponsors/thomassweet.png
+  url: https://thomassweetnb.com/
+  year: 2026
