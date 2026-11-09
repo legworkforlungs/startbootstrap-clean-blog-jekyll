@@ -4,30 +4,24 @@ layout: page
 title: Sponsors
 background: '/img/bg-sponsor.jpg'
 ---
-
 <div style="text-align: center; margin-bottom: 60px;">
 
   <h3>2026 Sponsors</h3>
   <p>Thank you to our sponsors for making this year's 5K Run and Mile Walk a success!</p>
   <p>Please click the button below if you are interested in sponsoring our event!</p>
-
-  <a href="{{ '/img/sponsors/sponsorshipletter.pdf' | relative_url }}"
-     class="btn btn-primary"
+  <a href="{{'/img/sponsors/sponsorshipletter.pdf' | relative_url }}" 
+     class="btn btn-primary" 
      style="padding: 10px 20px; background-color: #ff7756; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; margin: 10px;">
      Sponsorship Information
   </a>
-
-  <a href="{{ '/img/sponsors/mskccletter.pdf' | relative_url }}"
-     class="btn btn-primary"
+  <a href="{{'/img/sponsors/mskccletter.pdf' | relative_url }}" 
+     class="btn btn-primary" 
      style="padding: 10px 20px; background-color: #ff7756; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; margin: 10px;">
      MSKCC Event Acceptance Letter
   </a>
-
 </div>
 
 {% assign tiers = "Platinum,Gold,Silver,Bronze" | split: "," %}
-
-<!-- 2026 SPONSORS -->
 
 {% assign sponsors_2026 = site.data.sponsors | where: "year", "2026" %}
 
@@ -35,127 +29,72 @@ background: '/img/bg-sponsor.jpg'
 
   {% for tier in tiers %}
     {% assign sponsors = sponsors_2026 | where: "tier", tier %}
-
     {% if sponsors.size > 0 %}
-
-      <h4 style="margin-top: 25px; margin-bottom: 15px; text-align: center;">
-        {{ tier }} Sponsors
-      </h4>
-
-      <div style="margin-bottom: 25px; display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; align-items: flex-start;">
-
+      <h4 style="margin-top: 25px; margin-bottom: 15px; text-align: center;">{{ tier }} Sponsors</h4>
+      <div style="margin-bottom: 25px; display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
         {% for sponsor in sponsors %}
-
           {% if tier == "Platinum" %}
-            {% assign logo_width = "200px" %}
-            {% assign logo_height = "120px" %}
+            {% assign logo_size = "400px" %}
           {% elsif tier == "Gold" %}
-            {% assign logo_width = "175px" %}
-            {% assign logo_height = "110px" %}
+            {% assign logo_size = "300px" %}
           {% elsif tier == "Silver" %}
-            {% assign logo_width = "140px" %}
-            {% assign logo_height = "100px" %}
+            {% assign logo_size = "150px" %}
           {% elsif tier == "Bronze" %}
-            {% assign logo_width = "110px" %}
-            {% assign logo_height = "100px" %}
+            {% assign logo_size = "100px" %}
           {% endif %}
 
-          <div style="text-align: center; width: {{ logo_width }};">
-
-            <a href="{{ sponsor.url }}" target="_blank" rel="noopener noreferrer"
-               style="display: flex; width: 100%; height: {{ logo_height }}; align-items: center; justify-content: center;">
-
+          <div style="text-align: center; width: {{ logo_size }};">
+            <a href="{{ sponsor.url }}" target="_blank" style="display: block;">
               <img src="{{ sponsor.logo | relative_url }}"
                    alt="{{ sponsor.name }}"
-                   style="display: block; max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
-
+                   style="max-width: 100%; border-radius: 8px;">
             </a>
-
-            <p style="margin: 8px 0 0; font-size: 0.9rem; color: #333;">
-              {{ sponsor.name }}
-            </p>
-
+            <p style="margin: 4px 0 0; font-size: 0.9rem; color: #333;">{{ sponsor.name }}</p>
             {% if sponsor.location %}
-              <p style="margin: 2px 0 0; font-size: 0.75rem; font-style: italic; color: #666;">
-                {{ sponsor.location }}
-              </p>
+              <p style="margin: 2px 0 0; font-size: 0.75rem; font-style: italic; color: #666;">{{ sponsor.location }}</p>
             {% endif %}
-
           </div>
-
         {% endfor %}
-
       </div>
-
     {% endif %}
   {% endfor %}
-
 {% endif %}
-
-
-<!-- 2025 SPONSORS -->
 
 {% assign sponsors_2025 = site.data.sponsors | where: "year", "2025" %}
 
 {% if sponsors_2025.size > 0 %}
-
   <details style="margin-top: 50px; margin-bottom: 25px;">
-
     <summary style="font-size: 1.5rem; font-weight: bold; text-align: center; cursor: pointer;">
       2025 Sponsors
     </summary>
 
     {% for tier in tiers %}
       {% assign sponsors = sponsors_2025 | where: "tier", tier %}
-
       {% if sponsors.size > 0 %}
-
-        <h4 style="margin-top: 25px; margin-bottom: 15px; text-align: center;">
-          {{ tier }} Sponsors
-        </h4>
-
-        <div style="margin-bottom: 25px; display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; align-items: flex-start;">
-
+        <h4 style="margin-top: 25px; margin-bottom: 15px;">{{ tier }} Sponsors</h4>
+        <div style="margin-bottom: 25px; display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
           {% for sponsor in sponsors %}
-
             {% if tier == "Platinum" %}
-              {% assign logo_width = "200px" %}
-              {% assign logo_height = "120px" %}
+              {% assign logo_size = "400px" %}
             {% elsif tier == "Gold" %}
-              {% assign logo_width = "175px" %}
-              {% assign logo_height = "110px" %}
+              {% assign logo_size = "300px" %}
             {% elsif tier == "Silver" %}
-              {% assign logo_width = "140px" %}
-              {% assign logo_height = "100px" %}
+              {% assign logo_size = "150px" %}
             {% elsif tier == "Bronze" %}
-              {% assign logo_width = "110px" %}
-              {% assign logo_height = "100px" %}
+              {% assign logo_size = "100px" %}
             {% endif %}
 
-            <div style="text-align: center; width: {{ logo_width }};">
-
-              <a href="{{ sponsor.url }}" target="_blank" rel="noopener noreferrer"
-                 style="display: flex; width: 100%; height: {{ logo_height }}; align-items: center; justify-content: center;">
-
+            <div style="text-align: center; width: {{ logo_size }};">
+              <a href="{{ sponsor.url }}" target="_blank" style="display: block;">
                 <img src="{{ sponsor.logo | relative_url }}"
                      alt="{{ sponsor.name }}"
-                     style="display: block; max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
-
+                     style="max-width: 100%; border-radius: 8px;">
               </a>
-
-              <p style="margin: 8px 0 0; font-size: 0.9rem; color: #333;">
-                {{ sponsor.name }}
-              </p>
-
+              <p style="margin-top: 8px; font-size: 0.9rem; color: #333;">{{ sponsor.name }}</p>
             </div>
-
           {% endfor %}
-
         </div>
-
       {% endif %}
     {% endfor %}
-
   </details>
-
 {% endif %}
